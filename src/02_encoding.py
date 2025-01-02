@@ -15,9 +15,6 @@ genie_scout_path = os.path.join(data_path, "genie_scout")
 raw_data_path = os.path.join(genie_scout_path, "01_raw_data")
 cleaned_data_path = os.path.join(genie_scout_path, "02_cleaned_data")
 ingested_path = os.path.join(genie_scout_path, "03_ingested")
-ingested_path
-
-
 
 def normalizar_texto(texto):
     if texto is None:

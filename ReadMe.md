@@ -41,3 +41,21 @@ Esses dados serão analisados periodicamente para entender o desenvolvimento dos
 - Implementação de Machine Learning para prever a evolução dos jogadores.
 - Integração com bases de dados externas para benchmarking.
 - Desenvolvimento de uma interface web para visualização dos relatórios.
+
+## Diário de bordo
+
+### Contexto
+
+O objetivo inicial era utilizar o **Genie Scout** para obter informações sobre **CA (Current Ability)** e **PA (Potential Ability)** de jogadores. No entanto, ao exportar a tabela, essas informações ficavam indisponíveis.
+
+### Solução
+
+A solução encontrada foi utilizar o **FMRTE**, uma ferramenta que possui funcionalidades semelhantes ao **Genie Scout**. A partir dela, os dados são copiados e, em seguida, passa-se por uma **pipeline de tratamento** para garantir que as informações sejam processadas corretamente antes de serem armazenadas no banco de dados.
+
+### Processamento dos Dados
+
+O fluxo de dados inclui:
+
+1. **Exportação**: Copiar os dados do FMRTE.
+2. **Tratamento**: Realizar uma pipeline de processamento para garantir a integridade e a formatação dos dados.
+3. **Ingestão**: Inserir os dados tratados no banco de dados.
